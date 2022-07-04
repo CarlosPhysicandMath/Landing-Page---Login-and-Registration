@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Login and Registration Animated </title>
+	<link rel="stylesheet" type="text/css" href="exemplodesite18.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<section>
+	<div class="container">
+		<div class="user signinbox">
+			<div class="imgbox"><img src="pexels-alesia-kozik-7795398.jpg" height="450" width="400"></div>
+			<div class="formbox">
+				<form>
+					<h2> Sign In </h2>
+					<input type="text" placeholder="Username">
+					<input type="password" placeholder="Password">
+					<input type="Submit" value="Login">
+					<p class="signup"> don't have an account? <a href="#" onclick="toggleForm();"> Sign up.</a></p>
+				</form>
+			</div>
+		</div>
+		
+		<div class="user signupbox">
+			<div class="formbox">
+				<form>
+					<h2> Create an account </h2>
+					<input type="text" placeholder="Username">
+					<input type="email" placeholder="Email Address">
+					<input type="password" placeholder="Create Password">
+					<input type="password" placeholder="Confirm Password">
+					<input type="Submit" value="Sign Up">
+					<p class="signup">Already have an account? <a href="#" onclick="toggleForm();"> Sign in.</a></p>
+				</form>
+			</div>
+			<div class="imgbox"><img src="pexels-temmuz-uzun-10064222.jpg" height="450" width="400"></div>
+		</div>
+	</div>
+</section>
+	
+	<script>
+		function toggleForm(){
+			section = document.querySelector('section');
+			container = document.querySelector('.container');
+			container.classList.toggle('active');
+			section.classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>
